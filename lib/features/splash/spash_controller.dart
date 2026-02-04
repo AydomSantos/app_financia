@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class App extends StatelessWidget {
-  const App({super.key});
+class SpashController extends StatelessWidget {
+  const SpashController({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text('Home Page'),
+        child: Text('Splash Controller'),
       ),
     );
   }
