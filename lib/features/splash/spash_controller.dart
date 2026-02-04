@@ -1,14 +1,9 @@
 import 'package:flutter/material.dart';
+import '../../rotas/rotas.dart';
 
-class SpashController extends StatelessWidget {
-  const SpashController({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('Splash Controller'),
-      ),
-    );
+class SpashController {
+  void navigateToOnboarding(BuildContext context) {
+    // Usamos pushReplacementNamed para que o usuário não possa voltar para a SplashPage.
+    Navigator.pushReplacementNamed(context, Rotas.onboarding);
   }
 }
