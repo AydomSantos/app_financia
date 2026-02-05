@@ -45,6 +45,7 @@ class OnboardingPage extends StatelessWidget {
                   const SizedBox(height: 24),
                   ElevatedButton(
                     onPressed: () {
+                      Navigator.pushNamed(context, Rotas.singUp);
                       // Navegar para a próxima tela
                     },
                     style: ElevatedButton.styleFrom(
@@ -77,6 +78,7 @@ class OnboardingPage extends StatelessWidget {
                       const SizedBox(width: 5),
                       GestureDetector(
                         onTap: () {
+                          Navigator.pushNamed(context, Rotas.login);
                           // Navegar para a tela de login
                         },
                         child: const Text(
