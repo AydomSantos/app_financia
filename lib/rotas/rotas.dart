@@ -12,6 +12,7 @@ class Rotas {
     return {
       home: (context) => const SplashPage(),
       onboarding: (context) => const OnboardingPage(),
+      
     };
   }
 
